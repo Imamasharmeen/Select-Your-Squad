@@ -1,0 +1,92 @@
+[
+    {
+        "playerId": 1,
+        "name": "Virat Kohli",
+        "country": "India",
+        "image": "/images/virat_kohli.png",
+        "role": "Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm medium",
+        "biddingPrice": "$2.5M"
+      },
+      {
+        "playerId": 2,
+        "name": "Pat Cummins",
+        "country": "Australia",
+        "image": "/images/pat_cummins.png",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm fast",
+        "biddingPrice": "$1.7M"
+      },
+      {
+        "playerId": 3,
+        "name": "Kane Williamson",
+        "country": "New Zealand",
+        "image": "/images/kane_williamson.png",
+        "role": "Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm offbreak",
+        "biddingPrice": "$1.8M"
+      },
+      {
+        "playerId": 4,
+        "name": "Ben Stokes",
+        "country": "England",
+        "image": "/images/ben_stokes.png",
+        "role": "All-rounder",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Right-arm fast-medium",
+        "biddingPrice": "$3M"
+      },
+      {
+        "playerId": 5,
+        "name": "Jasprit Bumrah",
+        "country": "India",
+        "image": "/images/jasprit_bumrah.png",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm fast",
+        "biddingPrice": "$2M"
+      },
+      {
+        "playerId": 6,
+        "name": "David Warner",
+        "country": "Australia",
+        "image": "/images/david_warner.png",
+        "role": "Batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "None",
+        "biddingPrice": "$1.9M"
+      },
+      {
+        "playerId": 7,
+        "name": "Trent Boult",
+        "country": "New Zealand",
+        "image": "/images/trent_boult.png",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Left-arm fast-medium",
+        "biddingPrice": "$1.6M"
+      },
+      {
+        "playerId": 8,
+        "name": "Rohit Sharma",
+        "country": "India",
+        "image": "/images/rohit_sharma.png",
+        "role": "Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm offbreak",
+        "biddingPrice": "$2.3M"
+      },
+      {
+        "playerId": 9,
+        "name": "Rashid Khan",
+        "country": "Afghanistan",
+        "image": "/images/rashid_khan.png",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm legbreak",
+        "biddingPrice": "$2.1M"
+      }
+]

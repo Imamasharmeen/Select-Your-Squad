@@ -12,10 +12,14 @@ export default function Players() {
   },[])
 
   return (
-    <div>
-      <p>Player:{players.length}</p>
-      players.map()
-      <Player></Player>
+    <div className="container mx-auto my-14 grid md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-2xl border border-green-500">
+      {
+      players.map(player => <Player
+        key={player.playerId}
+        player={player}
+        ></Player>)
+      }
+      
     </div>
   )
 }

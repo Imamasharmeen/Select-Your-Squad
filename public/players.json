@@ -7,7 +7,7 @@
         "role": "Batsman",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm medium",
-        "biddingPrice": "$2.5M"
+        "biddingPrice": "$2500000"
       },
       {
         "playerId": 2,
@@ -17,7 +17,7 @@
         "role": "Bowler",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm fast",
-        "biddingPrice": "$1.7M"
+        "biddingPrice": "$1700000"
       },
       {
         "playerId": 3,
@@ -27,7 +27,7 @@
         "role": "Batsman",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm offbreak",
-        "biddingPrice": "$1.8M"
+        "biddingPrice": "$1800000"
       },
       {
         "playerId": 4,
@@ -37,7 +37,7 @@
         "role": "All-rounder",
         "battingType": "Left-hand bat",
         "bowlingType": "Right-arm fast-medium",
-        "biddingPrice": "$3M"
+        "biddingPrice": "$300000"
       },
       {
         "playerId": 5,
@@ -47,7 +47,7 @@
         "role": "Bowler",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm fast",
-        "biddingPrice": "$2M"
+        "biddingPrice": "$200000"
       },
       {
         "playerId": 6,
@@ -57,7 +57,7 @@
         "role": "Batsman",
         "battingType": "Left-hand bat",
         "bowlingType": "None",
-        "biddingPrice": "$1.9M"
+        "biddingPrice": "$1900000"
       },
       {
         "playerId": 7,
@@ -67,7 +67,7 @@
         "role": "Bowler",
         "battingType": "Right-hand bat",
         "bowlingType": "Left-arm fast-medium",
-        "biddingPrice": "$1.6M"
+        "biddingPrice": "$1600000"
       },
       {
         "playerId": 8,
@@ -77,7 +77,7 @@
         "role": "Batsman",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm offbreak",
-        "biddingPrice": "$2.3M"
+        "biddingPrice": "$2300000"
       },
       {
         "playerId": 9,
@@ -87,6 +87,6 @@
         "role": "Bowler",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm legbreak",
-        "biddingPrice": "$2.1M"
+        "biddingPrice": "$2100000"
       }
 ]

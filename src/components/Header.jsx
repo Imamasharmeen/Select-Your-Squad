@@ -1,7 +1,7 @@
 import logo from '../assets/logo.png'
 import coin from '../assets/coin.png'
 
-export default function Header() {
+export default function Header({coins}) {
   return (
     <div>
         <nav className="container mx-auto flex justify-between items-center my-10 border border-red-500">
@@ -16,7 +16,7 @@ export default function Header() {
                     <li><a>Schedules</a></li>
                 </ul> 
                 <div className="flex items-center gap-2">
-                    <button>0 Coin</button>
+                    <button>{coins} Coin</button>
                     <img src={coin} alt="Coin" />
                 </div>   
                                                 

@@ -7,7 +7,7 @@
         "role": "Batsman",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm medium",
-        "biddingPrice": "$2500000"
+        "biddingPrice": "250000"
       },
       {
         "playerId": 2,
@@ -17,7 +17,7 @@
         "role": "Bowler",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm fast",
-        "biddingPrice": "$1700000"
+        "biddingPrice": "170000"
       },
       {
         "playerId": 3,
@@ -27,7 +27,7 @@
         "role": "Batsman",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm offbreak",
-        "biddingPrice": "$1800000"
+        "biddingPrice": "180000"
       },
       {
         "playerId": 4,
@@ -37,7 +37,7 @@
         "role": "All-rounder",
         "battingType": "Left-hand bat",
         "bowlingType": "Right-arm fast-medium",
-        "biddingPrice": "$300000"
+        "biddingPrice": "300000"
       },
       {
         "playerId": 5,
@@ -47,7 +47,7 @@
         "role": "Bowler",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm fast",
-        "biddingPrice": "$200000"
+        "biddingPrice": "200000"
       },
       {
         "playerId": 6,
@@ -57,7 +57,7 @@
         "role": "Batsman",
         "battingType": "Left-hand bat",
         "bowlingType": "None",
-        "biddingPrice": "$1900000"
+        "biddingPrice": "190000"
       },
       {
         "playerId": 7,
@@ -67,7 +67,7 @@
         "role": "Bowler",
         "battingType": "Right-hand bat",
         "bowlingType": "Left-arm fast-medium",
-        "biddingPrice": "$1600000"
+        "biddingPrice": "160000"
       },
       {
         "playerId": 8,
@@ -77,7 +77,7 @@
         "role": "Batsman",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm offbreak",
-        "biddingPrice": "$2300000"
+        "biddingPrice": "230000"
       },
       {
         "playerId": 9,
@@ -87,6 +87,6 @@
         "role": "Bowler",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm legbreak",
-        "biddingPrice": "$2100000"
+        "biddingPrice": "210000"
       }
 ]

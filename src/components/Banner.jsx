@@ -3,7 +3,7 @@ import bgImage from '../assets/bg-shadow.png';
 
 export default function Banner({coins, setCoins}) {
   const handleAddCoin = () => {
-    console.log(typeof coins);
+    //console.log(typeof coins);
     setCoins(coins+1000000)
   };
   return (

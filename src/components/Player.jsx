@@ -1,7 +1,7 @@
 import user from '../assets/user.png'
 import flag from '../assets/flag.png'
 
-export default function Player({player}) {
+export default function Player({player, handleChoosePlayers}) {
   return (
     
     <div className="container mx-auto border border-gray-300 rounded-2xl p-4">
@@ -22,7 +22,9 @@ export default function Player({player}) {
         </div>
         <div>
           <p>{player.bowlingType}</p>
-          <button className='border rounded-xl px-3 hover:bg-[#E6FD29] hover:border-gray-600'>Choose player</button>
+          <button className='border rounded-xl px-3 hover:bg-[#E6FD29] hover:border-gray-600'
+          onClick = {() => handleChoosePlayers(player)}
+          >Choose player</button>
         </div>
       </div>
     </div>

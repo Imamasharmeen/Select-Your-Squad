@@ -1,6 +1,8 @@
 
 import AvailableButton from './components/AvailableButton';
+import AvailablePlayer from './components/AvailablePlayer';
 import Banner from './components/Banner'
+import Footer from './components/Footer';
 import Header from './components/Header'
 import Players from './components/Players'
 import { useState } from 'react';
@@ -9,9 +11,20 @@ import { useState } from 'react';
 export default function App() {
  const [coins, setCoins] = useState(parseInt(0))// It starts with an initial value of 0.
   //console.log(coins)
+  const handleAddCoins = (addCoins)=> {
+    //setCoins(coins-addCoins)
 
+    if(coins > addCoins){
+      setCoins(coins - addCoins)
+      
+    }
+    else {
+    alert("Not enough coins to select this player!");
+    }
+
+  }
  
-  //Conditional randering for toggle buttons
+  //Conditional rendering for toggle buttons
   const [isActive, setIsActive] = useState({
     available: true,
     status: 'active'
@@ -39,6 +52,7 @@ export default function App() {
       alert('Player selected')
     }
     else{ 
+      handleAddCoins(player.biddingPrice)
       const newPlayer = [...selectedPlayers, player]
       setSelectedPlayers(newPlayer)
     }
@@ -65,18 +79,24 @@ export default function App() {
         setCoins = {setCoins} 
         coins = {coins}
       ></Banner>
-
-      <AvailableButton
-        handleIsActive= {handleIsActive} 
-        isActive={isActive}
-        selectedPlayers={selectedPlayers}
-        handleDelete={handleDelete}
-      ></AvailableButton>
+      <section className='container mx-auto flex      justify-between items-center my-16 '>
+        <div><AvailablePlayer></AvailablePlayer></div>
+        <div>
+          <AvailableButton
+            handleIsActive= {handleIsActive} 
+            isActive={isActive}
+            selectedPlayers={selectedPlayers}
+            handleDelete={handleDelete}
+          ></AvailableButton>
+        </div>
+      </section>
+      
       
       <Players
         handleSelectedPlayer={handleSelectedPlayer}
       //coins = {coins} setCoins = {setCoins}
       ></Players>
+      <Footer></Footer>
       
     </div>
   )

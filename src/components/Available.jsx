@@ -1,9 +1,11 @@
+import Players from "./Players";
 
 
 export default function Available() {
   return (
     <div>
-      <h1>available</h1>
+      <h1></h1>
+      
     </div>
   )
 }

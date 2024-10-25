@@ -2,8 +2,8 @@ import Available from "./Available";
 import Selected from "./Selected";
 
 
-export default function AvailableButton({handleIsActive, isActive}) {
-  //console.log(isActive)
+export default function AvailableButton({handleIsActive, isActive, selectedPlayers, handleDelete}) {
+  //console.log(selectedPlayers)
   return (
     <div className="container mx-auto my-20 flex  border border-blue-500">
       
@@ -13,9 +13,11 @@ export default function AvailableButton({handleIsActive, isActive}) {
       <button
         onClick={()=>(handleIsActive('selected'))}
         className={`${isActive.available?'py-3 px-5 border border-gray-400':'bg-[#E6FD29] py-3 px-5 '}`}
-        >selected 0</button>
-      {isActive.available?<Available></Available> : <Selected></Selected>}
+        >Selected ({selectedPlayers.length})</button>
+        
+      {isActive.available?<Available></Available> : <Selected selectedPlayers={selectedPlayers} handleDelete={handleDelete}></Selected>}
       
     </div>
+    
   )
 }

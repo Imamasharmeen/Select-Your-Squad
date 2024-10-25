@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Players from './components/Players'
 import { useState } from 'react';
 
+
 export default function App() {
  const [coins, setCoins] = useState(parseInt(0))// It starts with an initial value of 0.
   //console.log(coins)
@@ -43,19 +44,37 @@ export default function App() {
     }
   }
 
+  //delate button
+  const handleDelete = (id) => {
+    console.log(id)
+    const remainingPlayers = selectedPlayers.filter((p) => p.playerId != id)
 
+    setSelectedPlayers(remainingPlayers);
+  }
 
 
 
 
   return (
     <div>
-      <Header coins = {coins}></Header>
-      <Banner setCoins = {setCoins} coins = {coins}
+      <Header 
+        coins = {coins}
+      ></Header>
+
+      <Banner 
+        setCoins = {setCoins} 
+        coins = {coins}
       ></Banner>
-      <AvailableButton handleIsActive= {handleIsActive} isActive={isActive}></AvailableButton>
+
+      <AvailableButton
+        handleIsActive= {handleIsActive} 
+        isActive={isActive}
+        selectedPlayers={selectedPlayers}
+        handleDelete={handleDelete}
+      ></AvailableButton>
+      
       <Players
-      handleSelectedPlayer={handleSelectedPlayer}
+        handleSelectedPlayer={handleSelectedPlayer}
       //coins = {coins} setCoins = {setCoins}
       ></Players>
       

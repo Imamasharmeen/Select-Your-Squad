@@ -2,7 +2,7 @@ import { useState, useEffect} from "react"
 import Player from "./Player"
 
 
-export default function Players({coins, setCoins}) {
+export default function Players({handleSelectedPlayer}) {
   const [players, setPlayers] = useState([])
 
   useEffect(()=>{
@@ -10,6 +10,9 @@ export default function Players({coins, setCoins}) {
     .then(res=>res.json())
     .then(data=>setPlayers(data))
   },[])
+  //console.log(players)
+  /*
+      coins, setCoins, handleSelectedPlayer
 
   const handleChoosePlayers = (player) => {
     //console.log(coins)
@@ -25,6 +28,7 @@ export default function Players({coins, setCoins}) {
     alert("Not enough coins to select this player!");
     }
   }
+  */
   
 
   return (
@@ -33,7 +37,8 @@ export default function Players({coins, setCoins}) {
       players.map(player => <Player
         key={player.playerId}
         player={player}
-        handleChoosePlayers = {handleChoosePlayers}
+        //handleChoosePlayers = {handleChoosePlayers}
+        handleSelectedPlayer={handleSelectedPlayer}
         ></Player>)
       }
       

@@ -6,11 +6,11 @@ import Players from './components/Players'
 import { useState } from 'react';
 
 export default function App() {
-  const [coins, setCoins] = useState(parseInt(0))// It starts with an initial value of 0.
+ const [coins, setCoins] = useState(parseInt(0))// It starts with an initial value of 0.
   //console.log(coins)
 
-  const [choosePlayers, setChoosePlayers] = useState([])
-
+ 
+  //Conditional randering for toggle buttons
   const [isActive, setIsActive] = useState({
     available: true,
     status: 'active'
@@ -27,8 +27,19 @@ export default function App() {
         status: 'selected'})
     }
   }
+  // State to manage for choose player display
+  const [selectedPlayers, setSelectedPlayers] = useState([])
+  //Add single player
+  const handleSelectedPlayer = (player) => {
+    const newPlayer = [...selectedPlayers, player]
+    console.log(newPlayer)
 
-  console.log(isActive)
+  }
+
+
+
+
+
   return (
     <div>
       <Header coins = {coins}></Header>
@@ -36,7 +47,8 @@ export default function App() {
       ></Banner>
       <AvailableButton handleIsActive= {handleIsActive} isActive={isActive}></AvailableButton>
       <Players
-      coins = {coins} setCoins = {setCoins}
+      handleSelectedPlayer={handleSelectedPlayer}
+      //coins = {coins} setCoins = {setCoins}
       ></Players>
       
     </div>

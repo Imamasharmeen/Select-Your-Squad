@@ -2,7 +2,7 @@ import user from '../assets/user.png'
 import flag from '../assets/flag.png'
 
 export default function Player({player, handleSelectedPlayer}) {
-  console.log(handleSelectedPlayer)
+  //console.log(handleSelectedPlayer)
   //console.log(player) handleChoosePlayers, 
   return (
     

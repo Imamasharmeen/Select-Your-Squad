@@ -29,12 +29,20 @@ export default function App() {
   }
   // State to manage for choose player display
   const [selectedPlayers, setSelectedPlayers] = useState([])
-  //Add single player
-  const handleSelectedPlayer = (player) => {
-    const newPlayer = [...selectedPlayers, player]
-    console.log(newPlayer)
 
+
+  //Add single player to the array
+  const handleSelectedPlayer = (player) => {
+    const isPlayerSelected = selectedPlayers.find((p) => p.playerId == player.playerId)
+    if (isPlayerSelected){
+      alert('Player selected')
+    }
+    else{ 
+      const newPlayer = [...selectedPlayers, player]
+      setSelectedPlayers(newPlayer)
+    }
   }
+
 
 
 

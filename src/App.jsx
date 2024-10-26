@@ -1,10 +1,8 @@
 
 import AvailableButton from './components/AvailableButton';
-import AvailablePlayer from './components/AvailablePlayer';
 import Banner from './components/Banner'
 import Footer from './components/Footer';
 import Header from './components/Header'
-import Players from './components/Players'
 import { useState } from 'react';
 
 
@@ -66,9 +64,6 @@ export default function App() {
     setSelectedPlayers(remainingPlayers);
   }
 
-
-
-
   return (
     <div>
       <Header 
@@ -79,26 +74,23 @@ export default function App() {
         setCoins = {setCoins} 
         coins = {coins}
       ></Banner>
-      <section className='container mx-auto flex      justify-between items-center my-16 '>
-        <div><AvailablePlayer></AvailablePlayer></div>
+      <section className='container mx-auto items-center my-16 border border-gray-600'>
         <div>
           <AvailableButton
             handleIsActive= {handleIsActive} 
             isActive={isActive}
             selectedPlayers={selectedPlayers}
             handleDelete={handleDelete}
+            handleSelectedPlayer={handleSelectedPlayer}
           ></AvailableButton>
-        </div>
+        </div>       
       </section>
-      
-      
-      <Players
-        handleSelectedPlayer={handleSelectedPlayer}
-      //coins = {coins} setCoins = {setCoins}
-      ></Players>
       <Footer></Footer>
       
     </div>
   )
 }
+
+
+
 

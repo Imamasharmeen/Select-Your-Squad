@@ -20,7 +20,6 @@ export default function Players({handleSelectedPlayer}) {
       players.map(player => <Player
         key={player.playerId}
         player={player}
-        //handleChoosePlayers = {handleChoosePlayers}
         handleSelectedPlayer={handleSelectedPlayer}
         ></Player>)
       }

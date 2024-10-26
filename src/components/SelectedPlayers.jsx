@@ -1,6 +1,4 @@
-
-
-export default function Selected({selectedPlayers, handleDelete}) {
+export default function SelectedPlayers({selectedPlayers, handleDelete}) {
   //console.log(selectedPlayers)
   return (
     <div>

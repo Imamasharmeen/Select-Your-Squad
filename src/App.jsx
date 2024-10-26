@@ -27,6 +27,17 @@ export default function App() {
     available: true,
     status: 'active'
   })
+//////////////////////
+    // NEW: Handler to show available players
+    const showAvailablePlayers = () => {
+      setIsActive({
+        available: true,
+        status: 'Available'
+      });
+    };
+///////////////
+
+
   const handleIsActive = (status) => {
     if( status == 'available'){
       setIsActive({
@@ -48,6 +59,9 @@ export default function App() {
     const isPlayerSelected = selectedPlayers.find((p) => p.playerId == player.playerId)
     if (isPlayerSelected){
       alert('Player selected')
+    }
+    else if(selectedPlayers.length >= 6){
+      alert("You can only select up to 6 players.");
     }
     else{ 
       handleAddCoins(player.biddingPrice)
@@ -74,7 +88,7 @@ export default function App() {
         setCoins = {setCoins} 
         coins = {coins}
       ></Banner>
-      <section className='container mx-auto items-center my-16 border border-gray-600'>
+      
         <div>
           <AvailableButton
             handleIsActive= {handleIsActive} 
@@ -82,9 +96,10 @@ export default function App() {
             selectedPlayers={selectedPlayers}
             handleDelete={handleDelete}
             handleSelectedPlayer={handleSelectedPlayer}
+            showAvailablePlayers={showAvailablePlayers} // NEW: Pass down showAvailablePlayers
           ></AvailableButton>
         </div>       
-      </section>
+      
       <Footer></Footer>
       
     </div>

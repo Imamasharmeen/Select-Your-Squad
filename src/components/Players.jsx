@@ -2,11 +2,11 @@ import { useState, useEffect} from "react"
 import Player from "./Player"
 
 
-export default function Players({handleSelectedPlayer}) {
+export default function Players({handleSelectedPlayer,}) {
   const [players, setPlayers] = useState([])
 
   useEffect(()=>{
-    fetch('../../public/players.json')
+    fetch('/players.json')
     .then(res=>res.json())
     .then(data=>setPlayers(data))
   },[])
@@ -25,6 +25,7 @@ export default function Players({handleSelectedPlayer}) {
           key={player.playerId}
           player={player}
           handleSelectedPlayer={handleSelectedPlayer}
+          
           ></Player>)
         }
         

@@ -4,7 +4,7 @@ export default function SelectedPlayers({selectedPlayers, handleDelete,showAvail
     <div className="container mx-auto ">
       <div>
           <h1 className="text-base md:text-xl lg:text-2xl font-bold">
-            Available Players({6-selectedPlayers.length}/6)</h1>
+            Available Players({9-selectedPlayers.length}/9)</h1>
         </div>
       <div className="container mx-auto my-5 p-4 border border-black">
         {
@@ -32,7 +32,10 @@ export default function SelectedPlayers({selectedPlayers, handleDelete,showAvail
         }
       </div> 
       <div>
-        <button onClick={showAvailablePlayers}>Add More Player</button>
+        <button onClick={showAvailablePlayers}
+           className='text-base md:text-lg lg:text-xl font-semibold py-3 px-5 rounded-2xl 
+        bg-[#E6FD29] hover:bg-[#E6FD29] ring-4 ring-[#E6FD29] ring-offset-4 ring-offset-slate-800 hover:ring-offset-slate-500 dark:ring-offset-slate-900'
+        >Add More Player</button>
       </div>
     </div>
    

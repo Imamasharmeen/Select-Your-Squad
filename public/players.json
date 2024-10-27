@@ -22,7 +22,7 @@
       {
         "playerId": 3,
         "name": "Kane Williamson",
-        "country": "New Zealand",
+        "country": "NewZealand",
         "image": "https://us.123rf.com/450wm/wahidmart/wahidmart2409/wahidmart240931378/235094890-illustration-of-sport-activity.jpg?ver=6",
         "role": "Batsman",
         "battingType": "Right-hand bat",
@@ -62,7 +62,7 @@
       {
         "playerId": 7,
         "name": "Trent Boult",
-        "country": "New Zealand",
+        "country": "NewZealand",
         "image": "https://us.123rf.com/450wm/wahidmart/wahidmart2409/wahidmart240931786/235095765-illustration-of-sport-activity.jpg?ver=6",
         "role": "Bowler",
         "battingType": "Right-hand bat",

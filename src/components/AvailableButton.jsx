@@ -10,8 +10,8 @@ export default function AvailableButton({handleIsActive, isActive, selectedPlaye
   
   //console.log(selectedPlayers)
   return (
-    <div>
-      <div className="container mx-auto flex justify-end rounded-2xl border border-red-500 mt-14 items-end">
+    <div >
+      <div className="w-10/12 mx-auto flex justify-end rounded-2xl  mt-14 items-end sticky top-36 z-50  bg-opacity-50 ">
         
           <button 
          

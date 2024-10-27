@@ -1,15 +1,18 @@
 import banner from '../assets/banner-main.png'
 import bgImage from '../assets/bg-shadow.png';
 
+
+
 export default function Banner({coins, setCoins}) {
   const handleAddCoin = () => {
     //console.log(typeof coins);
     setCoins(coins+1000000)
+    
   };
   return (
-    <div className='container mx-auto text-center py-16 border border-red-500 bg-cover'
+    <div className='w-10/12 mx-auto text-slate-100 text-center py-16  bg-black bg-cover'
     style={{ backgroundImage: `url(${bgImage})`, }}>
-      <div className='pb-5 flex justify-center border border-red-500'>
+      <div className='pb-5 flex justify-center'>
         <img src={banner} alt="Logo" /> 
       </div> 
       <div>
@@ -17,7 +20,7 @@ export default function Banner({coins, setCoins}) {
         Assemble Your Ultimate Dream 11 Cricket Team
         </p>
         <p className="text-xl md:text-1xl lg:text-3xl font-bold py-4">Beyond Boundaries Beyond Limits</p>
-        <button className='text-base md:text-lg lg:text-xl font-semibold py-5 px-8 rounded-2xl 
+        <button className='text-base text-black md:text-lg lg:text-xl font-semibold py-5 px-8 rounded-2xl 
         bg-[#E6FD29] hover:bg-[#E6FD29] ring-4 ring-[#E6FD29] ring-offset-4 ring-offset-slate-800 hover:ring-offset-slate-500 dark:ring-offset-slate-900'
         onClick ={handleAddCoin}>
           Claim Free Credit

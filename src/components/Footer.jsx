@@ -1,5 +1,5 @@
 //import logo-footer from '../assets/logo-footer.png'
-
+import footer from '../assets/logo-footer.png'
 
 export default function Footer() {
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
             <h1 className="text-base md:text-xl lg:text-3xl font-bold">Subscribe to our Newsletter</h1>
             <p className="py-4 text-sm md:text-lg lg:text-xl">Get the latest updates and news right in your inbox!</p>
             <input className="text-center border border-gray-300 lg:py-2 lg:px-3 lg:rounded-r-xl rounded-xl" type="text" placeholder="Enter your email"></input>
-            <button className="px-14 lg:py-2 lg:px-4 bg lg:rounded-r-xl rounded-xl bg-gradient-to-r from-[#CC6EA6] to-[#E8CB7B]">Subscribe </button>
+            <button className="px-14 lg:py-2 lg:px-4 lg:rounded-r-xl rounded-xl bg-gradient-to-r from-[#CC6EA6] to-[#E8CB7B]">Subscribe </button>
           </div>
         </div>
       </div>
@@ -20,9 +20,9 @@ export default function Footer() {
 
     <div>
       <div className=" bg-[#06091A] text-white border border-blue-950">
-        <section className="container mx-auto mt-10 md:mt-32 lg:mt-48 py-20 px-8 md:px-10">
-          <div>
-            <img></img>
+        <section className="container mx-auto mt-8 md:mt-32 py-20 px-8 md:px-10">
+          <div className=' py-5'>
+          <img className='mx-auto' src={footer} alt="footer" /> 
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 lg:">
             <div>

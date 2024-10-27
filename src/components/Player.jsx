@@ -4,15 +4,10 @@ import flag from '../assets/flag.png'
 
 export default function Player({player, handleSelectedPlayer,}) {
 
-  
-
   return (
     <div>
-    
-
-
-
-      <div className="container mx-auto border border-gray-300 rounded-2xl p-4">
+ 
+      <div className="border border-gray-300 rounded-2xl p-4">
         <div className="rounded-2xl border border-gray-300 p-3">
           <img className="w-full" src={player.image}></img>
         </div>

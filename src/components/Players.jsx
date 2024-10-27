@@ -15,11 +15,11 @@ export default function Players({handleSelectedPlayer,}) {
   
 
   return (
-    <div  className="container mx-auto ">
+    <div  className="w-10/12 mx-auto ">
       <div>
         <h1 className="text-base md:text-xl lg:text-2xl font-bold">Available Players</h1>
       </div>
-      <div className="my-5 grid md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-2xl border border-green-500">
+      <div className="my-5 grid md:grid-cols-2 lg:grid-cols-3 gap-5 rounded-2xl">
         {
         players.map(player => <Player
           key={player.playerId}

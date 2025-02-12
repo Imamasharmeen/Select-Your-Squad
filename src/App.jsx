@@ -28,7 +28,7 @@ export default function App() {
 
   }
 
-  //Conditional rendering for toggle buttons
+  //Conditional rendering for toggle buttonsgggg
   const [isActive, setIsActive] = useState({
     available: true,
     status: 'active'
